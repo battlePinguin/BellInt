@@ -1,7 +1,7 @@
 import java.util.Optional;
 
 public class ProductRepository {
-    Optional<Product> findByProduct(String product) {
+    Optional<Product> findByProductName(String product) {
         return null;
     }
 
