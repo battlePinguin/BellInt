@@ -1,7 +1,6 @@
 
 
 
-import org.slf4j.Logger;
 
 import java.util.*;
 
@@ -66,17 +65,17 @@ public class BasketImpl implements Basket {
             productList.add(productEntry.getKey());
         }
         return productList;
-
     }
 
     @Override
     public int getProductQuantity(String product) {
-        Product product1 = busket.get(product);
-        return product1.getQuantity();
+        Product productToReturnQuantity = busket.get(product);
+        return productToReturnQuantity.getQuantity();
     }
 
-    public HashMap<String, Product> returnBusketList() {
+    public HashMap<String, Product> getBusket() {
         return busket;
     }
+
 }
 
